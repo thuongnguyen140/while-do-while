@@ -9,19 +9,16 @@
 
 <body>
     <script>
-        let count = 0;
+    
         let num1 = 1;
-        let num2 = 2;
-
-        while (count < 20) {
-            let next_fibonaccy = num1 + num2;
-            document.write(next_fibonaccy + ', ');
-
+        let num2 = 1;
+        while (1) {
+            let fibo = num1 + num2;
+            if (fibo % 5 == 0) {
+                alert("so fibo la: " + fibo);
+            }
             num1 = num2;
-            num2 = next_fibonaccy;
-
-            count++
-            
+            num2 = fibo;
         }
     </script>
 </body>
