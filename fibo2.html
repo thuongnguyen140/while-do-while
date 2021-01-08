@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*   let num1 = 1;
+           let num2 = 1;
+           let fibo = num1 + num2;
+           while (fibo % 5 != 0) {
+               num1 = num2;
+               num2 = fibo;
+               fibo = num1 + num2;
+           }
+           alert(fibo); */
+
+        let num1 = 1;
+        let num2 = 1;
+        let fibo = 0;
+        do {
+            fibo = num1 + num2;
+            num1 = num2;
+            num2 = fibo;
+        } while (fibo % 5 != 0);
+        alert(fibo);
+    </script>
+</body>
+
+</html>
