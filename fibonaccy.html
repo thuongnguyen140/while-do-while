@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         let count = 0;
-        let num1 = 1
-        
+        let num1 = 1;
+        let num2 = 2;
+
+        while (count < 5) {
+            let next_fibonaccy = num1 + num2;
+            document.write(next_fibonaccy + ', ');
+
+            num1 = num2;
+            num2 = next_fibonaccy;
+
+            count++
+        }
     </script>
 </body>
+
 </html>
